@@ -7,6 +7,7 @@ build_config.mk
 *_test
 db_bench
 leveldbutil
-.buckconfig
-.buckd
-buck-out
+.buckconfig.local
+.buckd/
+buck-out/
+build_platform.txt
