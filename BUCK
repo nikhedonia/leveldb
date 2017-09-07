@@ -32,7 +32,7 @@ cxx_library(
   platform_compiler_flags = [
     ('default', ['-DOS_MACOSX', '-fno-builtin-memcmp', '-DLEVELDB_PLATFORM_POSIX', '-DLEVELDB_ATOMIC_PRESENT']),
     ('^macos.*', ['-DOS_MACOSX', '-fno-builtin-memcmp', '-DLEVELDB_PLATFORM_POSIX', '-DLEVELDB_ATOMIC_PRESENT']),
-    ('^linux.*', ['-DOS_LINUX']),
+    ('^linux.*', ['-DOS_LINUX', '-fno-builtin-memcmp', '-DLEVELDB_PLATFORM_POSIX', '-DLEVELDB_ATOMIC_PRESENT']),
     ('^windows.*', ['-lpthread', '-DOS_LINUX', '-DCYGWIN']),
   ],
   visibility = [
